@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+
 plt.style.use('seaborn')
 
 st.title('World Cites')
@@ -12,8 +13,6 @@ df = df[df.population>=pop_slider]
 st.map(df)
 
 st.write(df)
-
-
 
 #pop plot
 fig, ax = plt.subplots(figsize=(20, 5))
